@@ -4,3 +4,4 @@ services:
     build: ./app/backend
     ports:
       - "5000:5000"
+test
