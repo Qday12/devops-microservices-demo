@@ -27,7 +27,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest app/backend/tests
+          pytest tests
 
       - name: Security scan (Trivy FS)
         uses: aquasecurity/trivy-action@master
