@@ -2,3 +2,14 @@
 /infra/terraform/*.tfstate
 /infra/terraform/*.tfstate.backup
 /infra/terraform/.terraform.lock.hcl
+
+/infra/terraform/ec2-docker-compose/.terraform/
+/infra/terraform/ec2-docker-compose/*.tfstate
+/infra/terraform/ec2-docker-compose/*.tfstate.backup
+/infra/terraform/ec2-docker-compose/.terraform.lock.hcl
+
+/infra/terraform/eks-k8s/.terraform/
+/infra/terraform/eks-k8s/*.tfstate
+/infra/terraform/eks-k8s/*.tfstate.backup
+/infra/terraform/eks-k8s/.terraform.lock.hcl
+/infra/terraform/eks-k8s/terraform.tfvars
