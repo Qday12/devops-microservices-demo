@@ -10,9 +10,9 @@ def health():
 def users():
     return {"users": ["Alice", "Bob", "Charlie"]}
 
-@app.route("/")
+@app.route("/helloworld")
 def helloworld():
-    return {"hello world"}
+    return "Hello, World!"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
