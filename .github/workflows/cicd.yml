@@ -66,6 +66,9 @@ jobs:
       - name: Update kubeconfig
         run: aws eks update-kubeconfig --name demo-eks-cluster --region eu-north-1
 
+      - name: Restart deployment
+        run : kubectl rollout restart deployment backend -n default
+
       - name: Deploy to Kubernetes
         run: |
           kubectl apply -f k8s/aws/backend.yaml
