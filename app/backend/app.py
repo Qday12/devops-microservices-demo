@@ -11,7 +11,7 @@ def users():
     return {"users": ["Alice", "Bob", "Charlie"]}
 
 @app.route("/")
-def users():
+def helloworld():
     return {"hello world"}
 
 if __name__ == "__main__":
