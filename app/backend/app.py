@@ -10,7 +10,7 @@ def health():
 def users():
     return {"users": ["Alice", "Bob", "Charlie"]}
 
-@app.route("/helloworld")
+@app.route("/")
 def helloworld():
     return "Hello, World!"
 
