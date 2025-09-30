@@ -24,7 +24,7 @@ metadata:
   name: backend-service
   annotations:
     prometheus.io/scrape: "true"
-    prometheus.io/port: "5000"
+    prometheus.io/port: "80"
 spec:
   selector:
     app: backend
