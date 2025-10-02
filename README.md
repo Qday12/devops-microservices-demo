@@ -53,7 +53,9 @@ python app.py
 
 ## Terraform (infrastructure)
 cd terraform
+
 terraform init
+
 terraform apply
 
 ## Kubernetes (application + services)
