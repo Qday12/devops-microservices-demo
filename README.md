@@ -79,9 +79,9 @@ kubectl port-forward svc/grafana -n monitoring 3000:3000
 
 Access at: http://localhost:3000
 
-    Default login: admin / admin
+Default login: admin / admin
 
-    Add Prometheus as a data source
+Add Prometheus as a data source
 
 ---
 
