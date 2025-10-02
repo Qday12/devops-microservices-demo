@@ -1,6 +1,6 @@
-### 🚀 DevOps Microservices Demo
+# 🚀 DevOps Microservices Demo
 
-## 📌 Project Overview
+# 📌 Project Overview
 This project demonstrates a complete **DevOps / Cloud Native workflow** using modern tools and best practices.  
 It covers the entire lifecycle: from coding, testing, and security scanning to containerization, cloud infrastructure provisioning, deployment, and monitoring.  
 
@@ -8,7 +8,7 @@ The backend is a simple **Flask API** with endpoints for health checks, users, a
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 - **Python + Flask** – backend API  
 - **Docker** – containerization  
 - **Terraform** – Infrastructure as Code (AWS EKS, VPC, nodes)  
@@ -19,7 +19,7 @@ The backend is a simple **Flask API** with endpoints for health checks, users, a
 
 ---
 
-## ⚙️ Workflow
+# ⚙️ Workflow
 
 1. **Code Push → GitHub Actions runs**:
    - ✅ Unit tests with `pytest`  
@@ -35,42 +35,42 @@ The backend is a simple **Flask API** with endpoints for health checks, users, a
 
 ---
 
-## 📦 Local Setup
+# 📦 Local Setup
 
-# Clone repository
-git clone https://github.com/USERNAME/REPO.git
+## Clone repository
+git clone https://github.com/qday12/devops-microservices-demo.git
 cd REPO/app/backend
 
-# Install dependencies
+## Install dependencies
 pip install -r requirements.txt
 
-# Run locally
+## Run locally
 python app.py
 
 ---
 
-## ☸️ Deployment
+# ☸️ Deployment
 
-# Terraform (infrastructure)
+## Terraform (infrastructure)
 cd terraform
 terraform init
 terraform apply
 
-# Kubernetes (application + services)
+## Kubernetes (application + services)
 kubectl apply -f k8s/aws/backend.yaml
 
-# Monitoring
+## Monitoring
 kubectl apply -f k8s/aws/monitoring.yaml
 
 ---
 
-## 📊 Monitoring
+# 📊 Monitoring
 
-# Prometheus
+## Prometheus
 kubectl port-forward svc/prometheus -n monitoring 9090:9090
 Access at: http://localhost:9090
 
-# Grafana
+## Grafana
 kubectl port-forward svc/grafana -n monitoring 3000:3000
 Access at: http://localhost:3000
     Default login: admin / admin
@@ -78,16 +78,16 @@ Access at: http://localhost:3000
 
 ---
 
-## 🔒 Security
+# 🔒 Security
 Trivy scans Docker images for vulnerabilities during CI/CD.
 
 ---
 
-## 🚀 CI/CD with GitHub Actions
+# 🚀 CI/CD with GitHub Actions
 On Pull Request and Merge to Main: run tests, and security scans, build Docker image, push to registry and deploy to AWS EKS.
 
 ---
 
-## Author
+# Author
 Created by Paweł (github.com/qday12)
 Purpose: showcase DevOps, IaC, CI/CD, Kubernetes, and observability skills.
