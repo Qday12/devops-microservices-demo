@@ -39,7 +39,7 @@ The backend is a simple **Flask API** with endpoints for health checks, users, a
 
 ## Clone repository
 git clone https://github.com/qday12/devops-microservices-demo.git
-cd REPO/app/backend
+cd devops-microservices-demo/app/backend
 
 ## Install dependencies
 pip install -r requirements.txt
