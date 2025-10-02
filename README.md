@@ -39,6 +39,7 @@ The backend is a simple **Flask API** with endpoints for health checks, users, a
 
 ## Clone repository
 git clone https://github.com/qday12/devops-microservices-demo.git
+
 cd devops-microservices-demo/app/backend
 
 ## Install dependencies
@@ -70,12 +71,16 @@ kubectl apply -f k8s/aws/monitoring.yaml
 
 ## Prometheus
 kubectl port-forward svc/prometheus -n monitoring 9090:9090
+
 Access at: http://localhost:9090
 
 ## Grafana
 kubectl port-forward svc/grafana -n monitoring 3000:3000
+
 Access at: http://localhost:3000
+
     Default login: admin / admin
+
     Add Prometheus as a data source
 
 ---
@@ -92,4 +97,5 @@ On Pull Request and Merge to Main: run tests, and security scans, build Docker i
 
 # Author
 Created by Paweł (github.com/qday12)
+
 Purpose: showcase DevOps, IaC, CI/CD, Kubernetes, and observability skills.
